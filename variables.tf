@@ -1,8 +1,8 @@
-variable "access_key" {
-	default = "KI"
+variable "sg_id" {
+	default = " "
 }
-variable "secret_key" {
-	default = "RO"
+variable "subnet_id" {
+	default = " "
 }
 variable "aws_region" {
     default = "us-east-1"
