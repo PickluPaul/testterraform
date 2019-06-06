@@ -32,7 +32,6 @@ resource "aws_instance" "testcc_vm" {
     
     ami = "${data.aws_ami.amazon_linux.id}"
     instance_type = "${var.aws_instance_type}"
-    availability_zone = "${lookup(var.aws_availability_zones, count.index)}"
 
     key_name = "${aws_key_pair.deployer.key_name}"
     vpc_security_group_ids  = [ "${var.sg_id}"]
